@@ -1,0 +1,32 @@
+Realizar un programa que permita leer de teclado diez valores enteros positivos; 
+Y que permita, cada vez que se ingrese uno de los mismos, imprimir en pantalla
+si es par, si es impar e identificar el cero.
+
+import java.util.Scanner;
+
+public class Ejercicio3 {
+
+public static void main(String[] args) {
+		
+		Scanner x = new Scanner (System.in);
+		
+		int num [] = new int [10] ;
+		
+		System.out.println("Ingrese los valores");
+		for (int i = 0; i < 10; i++) {
+			num[i] = x.nextInt();
+			if (num[i] == 0) {
+				System.out.println(num[i]+" Numero Cero");
+			}
+			else if(num[i] % 2 == 0) {
+		        System.out.println(num[i]+ " Numero par");
+		}
+			else {
+				System.out.println(num[i]+" Numero Impar");
+				
+	         }
+  		}
+
+	}
+
+}
